@@ -169,7 +169,7 @@ function finishReading() {
   const elapsedSec = (Date.now() - startTime) / 1000;
 
   // 正解選択肢: a, d
-  const correctAnswers = ["b", "c"];
+  const correctAnswers = ["a", "d"];
   const checked = Array.from(document.querySelectorAll(".q1:checked")).map(el => el.value);
   const numCorrect = checked.filter(val => correctAnswers.includes(val)).length;
   const numIncorrect = checked.filter(val => !correctAnswers.includes(val)).length;
@@ -194,6 +194,7 @@ function finishReading() {
 
 </body>
 </html>
+
 
 
 
