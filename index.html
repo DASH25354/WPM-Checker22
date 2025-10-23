@@ -127,13 +127,12 @@
 
 <!-- テキスト -->
 <div id="text">
-【14】Kenshi Yonezu is a Japanese singer-songwriter and visual artist. He was born on March 10, 1991. As a student, he made songs at night on his computer. He also drew simple storyboards for videos. He chose colors and camera moves so the music and images matched well. He started by making songs alone. He mixed pop, rock, and soft dance beats into clear hooks. His lyrics use simple words to show deep feelings: hope, pain, and the beauty of daily life. Many listeners say his songs help when they feel lost. He shared works online and found fans who loved both sound and art. In videos, he often designs the concept himself. Each project feels like a small world with its own light. On stage, he is calm and focused. Lights and screens add to the story. He speaks little and lets the music talk. New listeners start with famous songs and often press repeat. His careful layers reward close listening and make a strong, memorable experience.
-</div>
+【15】Homework is my biggest stress. If I had a clear plan, I’d start right after school and be done by dinner. I wish math were easier; sometimes I just stare at one problem for thirty minutes. I act as if I were calm in class, but my hands shake before I check my answers. If I had someone to ask, I’d learn faster. I’m also worried about the school festival. I wish our team were kinder. We act as if we were a perfect group, but we argue about the poster and who’s in charge. If the teacher were there, we’d listen. I wish we could say sorry and work as one team. If we had a fresh start, we’d make something we were proud of.</div>
 
 <!-- 音声再生（英文の下、ボタンの上） -->
 <div class="audio-wrapper">
   <audio controls>
-    <source src="14.mp3" type="audio/mpeg">
+    <source src="15.mp3" type="audio/mpeg">
     Your browser does not support the audio element.
   </audio>
 </div>
@@ -146,13 +145,10 @@
 <div id="questions">
   <h3>Quiz</h3>
   <label>Select all options below that match the content of the passage.</label></span>
-  <span class="question-option"><input type="checkbox" class="q1" value="a"> Japanese bacon is usually sliced very thin, so it gets crispy fast.
-</span>
-  <span class="question-option"><input type="checkbox" class="q1" value="b"> Western bacon is cured and smoked longer, and it is sliced thin.</span>
-  <span class="question-option"><input type="checkbox" class="q1" value="c"> More water in bacon can make it steam and stay soft in the pan. 
-</span>
-  <span class="question-option"><input type="checkbox" class="q1" value="d"> Adding a lot of salt and sugar always makes any bacon crispy without heat. 
-</span>
+  <span class="question-option"><input type="checkbox" class="q1" value="a"> The student feels stressed by homework (especially math) and wishes to finish efficiently with a clear plan.</span>
+  <span class="question-option"><input type="checkbox" class="q1" value="b"> The student wakes up early every morning to study English and improve grades.</span>
+  <span class="question-option"><input type="checkbox" class="q1" value="c"> The student thinks the school library is quiet and comfortable.</span>
+  <span class="question-option"><input type="checkbox" class="q1" value="d"> The student experiences conflict within the school festival team over the poster and wishes to apologize and work together. </span>
 </div>
 
 <div id="result"></div>
@@ -172,7 +168,7 @@ function finishReading() {
   if (!startTime) return alert("Please start reading first!");
   const elapsedSec = (Date.now() - startTime) / 1000;
 
-  // 正解選択肢: b, c
+  // 正解選択肢: a, d
   const correctAnswers = ["b", "c"];
   const checked = Array.from(document.querySelectorAll(".q1:checked")).map(el => el.value);
   const numCorrect = checked.filter(val => correctAnswers.includes(val)).length;
@@ -198,6 +194,7 @@ function finishReading() {
 
 </body>
 </html>
+
 
 
 
