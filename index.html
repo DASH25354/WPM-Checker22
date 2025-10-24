@@ -127,12 +127,13 @@
 
 <!-- テキスト -->
 <div id="text">
-【15】Homework is my biggest stress. If I had a clear plan, I’d start right after school and be done by dinner. I wish math were easier; sometimes I just stare at one problem for thirty minutes. I act as if I were calm in class, but my hands shake before I check my answers. If I had someone to ask, I’d learn faster. I’m also worried about the school festival. I wish our team were kinder. We act as if we were a perfect group, but we argue about the poster and who’s in charge. If the teacher were there, we’d listen. I wish we could say sorry and work as one team. If we had a fresh start, we’d make something we were proud of.</div>
+【16】Takaichi Sanae has become Japan’s 104th prime minister. She is making news around the world because she is Japan’s first female prime minister. Takaichi grew up near Nara. She comes from a middle-class family and likes heavy metal bands. She is an amateur drummer. She spent some time in the U.S. before going into politics in Japan in 1993. She was very close to Abe Shinzo. One of her heroes is Margaret Thatcher, the first female British prime minister. Takaichi will not have an easy job as the head of the Japanese government. Inflation is bad, and her government cannot do anything without the help of other political parties. 
+</div>
 
 <!-- 音声再生（英文の下、ボタンの上） -->
 <div class="audio-wrapper">
   <audio controls>
-    <source src="15.mp3" type="audio/mpeg">
+    <source src="16.mp3" type="audio/mpeg">
     Your browser does not support the audio element.
   </audio>
 </div>
@@ -145,10 +146,11 @@
 <div id="questions">
   <h3>Quiz</h3>
   <label>Select all options below that match the content of the passage.</label></span>
-  <span class="question-option"><input type="checkbox" class="q1" value="a"> The student feels stressed by homework (especially math) and wishes to finish efficiently with a clear plan.</span>
-  <span class="question-option"><input type="checkbox" class="q1" value="b"> The student wakes up early every morning to study English and improve grades.</span>
-  <span class="question-option"><input type="checkbox" class="q1" value="c"> The student thinks the school library is quiet and comfortable.</span>
-  <span class="question-option"><input type="checkbox" class="q1" value="d"> The student experiences conflict within the school festival team over the poster and wishes to apologize and work together. </span>
+  <span class="question-option"><input type="checkbox" class="q1" value="a"> Takaichi Sanae pursues music and spends time in the U.S. before entering politics.
+</span>
+  <span class="question-option"><input type="checkbox" class="q1" value="b"> Takaichi Sanae faces significant challenges as Japan’s first female prime minister and has a notable background.</span>
+  <span class="question-option"><input type="checkbox" class="q1" value="c"> Abe Shinzo and Margaret Thatcher shape political legacies that influence Japan.</span>
+  <span class="question-option"><input type="checkbox" class="q1" value="d"> Heavy metal culture rises among Japanese politicians. </span>
 </div>
 
 <div id="result"></div>
@@ -168,8 +170,8 @@ function finishReading() {
   if (!startTime) return alert("Please start reading first!");
   const elapsedSec = (Date.now() - startTime) / 1000;
 
-  // 正解選択肢: a, d
-  const correctAnswers = ["a", "d"];
+  // 正解選択肢: a, b
+  const correctAnswers = ["a", "b"];
   const checked = Array.from(document.querySelectorAll(".q1:checked")).map(el => el.value);
   const numCorrect = checked.filter(val => correctAnswers.includes(val)).length;
   const numIncorrect = checked.filter(val => !correctAnswers.includes(val)).length;
@@ -194,6 +196,7 @@ function finishReading() {
 
 </body>
 </html>
+
 
 
 
