@@ -127,12 +127,12 @@
 
 <!-- テキスト -->
 <div id="text">
-【20】Machikane Festival is a big event at Osaka University. Long ago, there was a sports and culture festival. This is its start. Osaka University has two festivals: one in spring and one in autumn. Machikane in autumn is bigger and longer. Many people come every year. This year, the theme is “EXPOSION.” It mixes “EXPO” and “EXPLOSION.” It means student ideas are big and strong for three days. There are over 200 plans by clubs and student groups. You can walk and try food at small stands. You can see and buy art and other works. You can watch music and dance on the stage. Please find your favorite plan. Visitors can vote for popular plans. There are also events by schools and labs. You can see research and learn. It is a good chance to know Osaka University. Students are very active. You can also see daily life: the shop is open in the day. If exams are near, please come and relax your mind. It is easy to join.</div>
+【22】Halloween began long ago in Celtic lands. People had a festival called Samhain on October 31. They thought spirits could visit on that night. So they lit fires and wore simple masks to protect their homes. Later, Romans added harvest customs to Samhain. In the 7th century, the Christian church made November 1 All Saints’ Day. The night before became All Hallows’ Eve, or Halloween. Traditions slowly mixed. People carved turnips first, and later pumpkins, to make jack-o’-lanterns. Children dressed up and went to houses to ask for sweets. This became trick-or-treat. In the 19th century, immigrants carried these customs to North America. In the 20th century, towns held parties and games. Shops sold costumes and candy. Movies and stories made Halloween feel spooky and fun. Today, Halloween is a happy celebration in many countries. People enjoy costumes, pumpkins, and candy, but the old ideas from Samhain are still part of the holiday.</div>
 
 <!-- 音声再生（英文の下、ボタンの上） -->
 <div class="audio-wrapper">
   <audio controls>
-    <source src="20.mp3" type="audio/mpeg">
+    <source src="22.mp3" type="audio/mpeg">
     Your browser does not support the audio element.
   </audio>
 </div>
@@ -145,11 +145,11 @@
 <div id="questions">
   <h3>Quiz</h3>
   <label>Select all options below that match the content of the passage.</label></span>
-  <span class="question-option"><input type="checkbox" class="q1" value="a"> It is a large, historic autumn festival at Osaka University with many student-led events and a special theme. 
+  <span class="question-option"><input type="checkbox" class="q1" value="a"> Halloween has roots in an old Celtic event named Samhain. 
 </span>
-  <span class="question-option"><input type="checkbox" class="q1" value="b"> The festival has only food stalls and no stage performances.</span>
-  <span class="question-option"><input type="checkbox" class="q1" value="c"> It is a one-day event held only in spring.</span>
-  <span class="question-option"><input type="checkbox" class="q1" value="d"> Visitors can explore research, vote on projects, and experience campus life during the three-day event.  </span>
+  <span class="question-option"><input type="checkbox" class="q1" value="b"> All Hallows’ Eve happens on the day after November.</span>
+  <span class="question-option"><input type="checkbox" class="q1" value="c"> In modern times, people often cut faces into pumpkins for lanterns. </span>
+  <span class="question-option"><input type="checkbox" class="q1" value="d"> The place where Halloween first became very popular was Africa. </span>
 </div>
 
 <div id="result"></div>
@@ -169,8 +169,8 @@ function finishReading() {
   if (!startTime) return alert("Please start reading first!");
   const elapsedSec = (Date.now() - startTime) / 1000;
 
-  // 正解選択肢: a, d
-  const correctAnswers = ["a", "d"];
+  // 正解選択肢: a, c
+  const correctAnswers = ["a", "c"];
   const checked = Array.from(document.querySelectorAll(".q1:checked")).map(el => el.value);
   const numCorrect = checked.filter(val => correctAnswers.includes(val)).length;
   const numIncorrect = checked.filter(val => !correctAnswers.includes(val)).length;
@@ -195,6 +195,7 @@ function finishReading() {
 
 </body>
 </html>
+
 
 
 
